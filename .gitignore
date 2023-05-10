@@ -49,3 +49,6 @@ local
 
 # vercel
 .vercel
+
+# nyc
+.nyc_output
