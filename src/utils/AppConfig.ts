@@ -1,8 +1,8 @@
-// FIXME: Update this configuration file based on your project information
+const description = `I'm Sabian, cognitive scientist, experience (UX, CX, EX) designer, developer, worldbuilder, storywriter, music lover, martial artist, and more`;
 
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
+  site_name: 'Sabian Finogwar',
+  title: 'Portfolio Website',
+  description,
   locale: 'en',
 };
