@@ -1,27 +1,79 @@
+@import "@/styles/theme.css";
+
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: var(--fs-normal);
+  line-height: var(--lh-normal);
+  line-spacing: var(--ls-normal);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-body);
+}
 
 a {
   @apply text-blue-700;
+  color: var(--color-link);
+  text-decoration: none;
 }
 
 a:hover {
   @apply border-b-2 border-blue-700;
 }
 
-@tailwind components;
+h1,
+h2,
+h3,
+h4 {
+  font: var(--font-header);
+  header-weight: var(--header-weight);
+  header-lh: var(--header-lh);
+  header-ls: var(--header-ls);
+  header-align: var(--header-align);
+}
 
-@tailwind utilities;
+h1 {
+  font-size: var(--h1-size);
+}
 
-.content p {
-  @apply my-6;
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+p {
+  font-size: var(--p-size);
+  line-height: var(--p-lh);
+  line-spacing: var(--p-ls);
+  margin-bottom: var(--p-mb);
+}
+
+.content ul,
+.content ol {
+  margin-top: var(--ul-mt);
+  margin-left: var(--ul-ml);
 }
 
 .content ul {
-  @apply my-6;
+  list-style-type: disc;
 }
 
-.content ul li {
-  list-style-type: disc;
-  margin-left: 32px;
-  padding-bottom: 8px;
+.content ul li,
+.content ol li {
+  padding-bottom: var(--li-pb);
 }
